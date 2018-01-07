@@ -7,7 +7,7 @@ app.use("/",express.static("./"));
 var http = require('http');
 // Creating an HTTP server
 var server = http.createServer(app).listen(8080);
-var io = require('socket.io')(server);
+var socket = require('socket.io')(server);
 
 // Create terminal
 var term = pty.spawn('sh', [], {
