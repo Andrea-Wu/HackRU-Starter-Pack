@@ -34,4 +34,3 @@ socket.on("disconnect", function(){
    term.destroy();
    console.log("bye");
 });
-});
